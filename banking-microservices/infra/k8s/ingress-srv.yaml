@@ -1,0 +1,63 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ingress-service
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    nginx.ingress.kubernetes.io/use-regex: "true"
+
+    ## tells ingress to check for regex in the config file
+    nginx.ingress.kubernetes.io/ssl-redirect: "false"
+    nginx.ingress.kubernetes.io/enable-cors: "true"
+    nginx.ingress.kubernetes.io/cors-allow-methods: "GET,HEAD,PUT,PATCH,POST,DELETE"
+spec:
+  tls:
+  - hosts: 
+    - banking-microservices.dev
+    secretName: banking-ingress-tls
+  rules:
+    - host: banking-microservices.dev
+      http:
+        paths:
+          - path: /api/users/?(.*)
+            pathType: Prefix
+            backend:
+              service:
+                name: auth-srv
+                port:
+                  number: 3000
+          - path: /api/admin/?(.*)
+            pathType: Prefix
+            backend:
+              service:
+                name: admin-srv
+                port:
+                  number: 3000
+          - path: /api/cards/?(.*)
+            pathType: Prefix
+            backend:
+              service:
+                name: cards-srv
+                port:
+                  number: 3000
+          - path: /api/replenishments/?(.*)
+            pathType: Prefix
+            backend:
+              service:
+                name: replenishments-srv
+                port:
+                  number: 3000
+          - path: /api/transactions/?(.*)
+            pathType: Prefix
+            backend:
+              service:
+                name: transactions-srv
+                port:
+                  number: 3000
+          - path: /api/transfers/?(.*)
+            pathType: Prefix
+            backend:
+              service:
+                name: transfers-srv
+                port:
+                  number: 3000

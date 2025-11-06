@@ -1,0 +1,46 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: transfers-depl
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: transfers
+  template:
+    metadata:
+      labels:
+        app: transfers
+    spec:
+      containers:
+        - name: transfers
+          image: yevhen24/transfers
+          env:
+            - name: NATS_CLIENT_ID
+              valueFrom:
+                 fieldRef:
+                  fieldPath: metadata.name
+            - name: NATS_URL
+              value: 'http://nats-srv:4222'
+            - name: NATS_CLUSTER_ID
+              value: banking
+            - name: MONGO_URI
+              value: 'mongodb://transfers-mongo-srv:27017/transfers'
+            - name: JWT_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: jwt-secret
+                  key: JWT_KEY
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: transfers-srv
+spec:
+  selector:
+    app: transfers
+  ports:
+    - name: transfers
+      protocol: TCP
+      port: 3000
+      targetPort: 3000

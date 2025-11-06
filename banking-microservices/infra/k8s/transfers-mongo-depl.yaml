@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: transfers-mongo-depl
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: transfers-mongo
+  template:
+    metadata:
+      labels:
+        app: transfers-mongo
+    spec:
+      containers:
+        - name: transfers-mongo
+          image: mongo
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: transfers-mongo-srv
+spec:
+  selector:
+    app: transfers-mongo
+  ports:
+    - name: db
+      protocol: TCP
+      port: 27017
+      targetPort: 27017
