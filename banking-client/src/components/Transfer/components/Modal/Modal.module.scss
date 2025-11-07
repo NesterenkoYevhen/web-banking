@@ -1,0 +1,101 @@
+@import '../../../../scss/variables';
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.modal {
+  &__bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #18181A;;
+    opacity: 0.34;
+  }
+
+  &__container {
+    position: fixed;
+    top: 17%;
+    right: 21.4%;
+    bottom: 17%;
+    left: 21.4%;
+    padding: 33px;
+    background-color: white;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+  }
+
+  &__info {
+    height: 100%;
+  }
+
+}
+
+.tranfer-end {
+  &__container {
+    width: 600px;
+  }
+  &__close {
+    justify-content: flex-end;
+    &--btn {
+      color: #1D2126;
+      font-size: 1rem;
+    }
+  }
+
+  &__icon {
+    position: relative;
+    &--circle {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: #EFF458;
+      filter: blur(10px);
+      line-height: 0;
+      
+      & + svg {
+        font-size: 1.5rem;
+        line-height: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 999;
+      }
+    }
+  }
+
+  &__title {
+    margin-top: 32px;
+  }
+
+  &__controls {
+    margin-top: 55px;
+  }
+
+  &__control {
+    width: 288px;
+  }
+
+  &__errors {
+    margin-top: 25px;
+    color: $gray-70-color;
+  }
+}
+
+.transfer-end-info {
+  margin-top: 41px;
+  &__item {
+    max-width: 120px;
+  }
+  &__title {
+    font-weight: 500;
+    color: $gray-70-color
+  }
+
+  &__subtitle {
+    margin-top: 8px;
+  }
+}

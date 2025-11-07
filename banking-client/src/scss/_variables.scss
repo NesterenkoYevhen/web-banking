@@ -1,0 +1,75 @@
+// Colors
+$primary-color: #eff458;
+$secondary-color: #1d1d1f;
+$additional-gray-1-color: #f6f6f6;
+$additional-gray-2-color: #404040;
+$focused-button-primary-color: #d9df1f;
+$disabled-button-primary-color: #f2f58f;
+$focused-button-secondary-color: #f5f8a9;
+$gold-card-color: #fbfd9a;
+$gray-100-color: #18181a;
+$gray-80-color: #323236;
+$gray-70-color: #686970;
+$gray-50-color: #8e8f96;
+$gray-30-color: #b6b6bc;
+$gray-20-color: #d2d2d8;
+$gray-10-color: #dbdbe2;
+$gray-5-color: #f5f6fa;
+$gray-0-color: #ffffff;
+$success-color: #44b548;
+$warning-color: #fdb325;
+$error-color: #e14a41;
+
+// Common
+$main-font: 'DM Sans', sans-serif;
+$html-font-size: 16px;
+$body-font-color: $gray-100-color;
+$body-font: $main-font;
+$body-fz: 1rem;
+$body-fw: 500;
+$body-lh: 1;
+
+// Titles
+$title-h1-fz: 2.5rem;
+$title-h2-fz: 2rem;
+$title-h3-fz: 1.5rem;
+$title-h4-fz: 1.125rem;
+$title-h5-fz: 1rem;
+
+$title-ff: $main-font;
+$title-color: $gray-100-color;
+
+$title-sizes: (
+  h1: $title-h1-fz,
+  h2: $title-h2-fz,
+  h3: $title-h3-fz,
+  h4: $title-h4-fz,
+  h5: $title-h5-fz,
+);
+
+// Texts
+$text-main-fz: 1rem;
+$text-secondary-fz: 0.875rem;
+$text-small-bold-fz: 0.75rem;
+$text-small-regular-fz: 0.75rem;
+
+$text-main-fw: 500;
+$text-secondary-fw: 500;
+$text-small-bold-fw: 700;
+$text-small-regular-fw: 400;
+
+$text-ff: $main-font;
+
+$text-sizes: (
+  main: $text-main-fz,
+  secondary: $text-secondary-fz,
+  small-bold: $text-small-bold-fz,
+  small-regular: $text-small-regular-fz,
+);
+
+$text-font-weights: (
+  main: $text-main-fw,
+  secondary: $text-secondary-fw,
+  small-bold: $text-small-bold-fw,
+  small-regular: $text-small-regular-fw,
+);

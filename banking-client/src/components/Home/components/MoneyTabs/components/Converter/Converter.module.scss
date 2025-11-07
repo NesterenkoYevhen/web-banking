@@ -1,0 +1,21 @@
+@import '../../../../../../scss/variables';
+
+.converter {
+  margin-top: 50px;
+  &__input {
+    border: 1px solid $gray-30-color;
+    border-radius: 16px;
+
+    & + & {
+      margin-top: 25px;
+    }
+  }
+
+  &__dropdown {
+    width: 136px;
+  }
+
+  &__text, &__select {
+    border: none !important;
+  }
+}

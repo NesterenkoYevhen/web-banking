@@ -1,0 +1,22 @@
+@import '../../../../scss/variables';
+
+.header-secondary {
+  &__info-item {
+    & + & {
+      margin-left: 30px;
+    }
+  }
+  &__link {
+    padding: 7px;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    background-color: $additional-gray-1-color;
+  }
+  &__avatar {
+    width: 40px;
+    border-radius: 50%;
+  }
+  &__user-name {
+    margin-left: 13px;
+  }
+}

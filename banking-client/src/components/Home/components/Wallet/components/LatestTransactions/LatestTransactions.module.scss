@@ -1,0 +1,52 @@
+@import '../../../../../../scss/variables';
+
+.latest-transactions {
+  margin-top: 36px;
+
+  &__list, &__btn-more {
+    margin-top: 24px;
+  }
+}
+
+.transaction {
+  & + & {
+    margin-top: 16px;
+  }
+
+  &__icon {
+    padding: 8px;
+    width: 40px;
+    height: 40px;
+    line-height: 0;
+    font-size: 1.5rem;
+    color: $gray-0-color;
+    border-radius: 8px;
+    background-color: $secondary-color;
+  }
+
+  &__info {
+    margin-left: 16px;
+  }
+
+  &__title {
+    font-size: 1rem;
+    color: $gray-100-color;
+  }
+
+  &__subtitle {
+    margin-top: 6px;
+    color: $gray-50-color;
+    font-weight: 500;
+    font-size: 0.875rem;
+  }
+}
+
+.text {
+  &--red {
+    color: $error-color;
+  }
+
+  &--green {
+    color: $success-color;
+  }
+}

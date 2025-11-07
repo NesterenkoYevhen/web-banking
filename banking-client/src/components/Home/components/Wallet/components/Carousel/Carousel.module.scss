@@ -1,0 +1,31 @@
+@import '../../../../../../scss/variables';
+
+.carousel {
+  &__arrow {
+    font-size: 1rem;
+    cursor: pointer;
+    &--disabled {
+      cursor: no-drop;;
+    }
+  }
+
+  &__window {
+    width: 288px;
+    height: 201px;
+  }
+
+  &__cards {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+}
+
+.cards-container {
+  height: 100%;
+  display: flex;
+  transition: translate;
+  transition-property: transform;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
+}

@@ -1,0 +1,92 @@
+@import '../../../../scss/variables';
+
+.cost-analysis {
+  margin-top: 50px;
+  width: 450px;
+  &__year {
+    padding: 8px 10px;
+    background-color: $additional-gray-1-color;
+    
+    color: $gray-100-color;
+    line-height: 0;
+    border-radius: 6px;
+
+    &--text {
+      margin-left: 10px;
+      font-size: 0.75rem;
+    }
+  }
+
+  &__info {
+    margin-top: 20px;
+    position: relative;
+  }
+
+  &__list {
+    margin-top: 130px;
+    margin-left: 16px;
+  }
+
+  &__item {
+    width: 32px;
+
+    & + & {
+      margin-left: 23.5px;
+    }
+  }
+}
+
+.day-progress {
+  height: 32px;
+  width: 143px;
+  appearance: none;
+  border: none;
+  background-color: transparent;
+  &::-webkit-progress-value {
+    background-color: $primary-color;
+    border-radius: 8px;
+  }
+  &::-webkit-progress-bar {
+    background-color: $additional-gray-2-color;
+    border-radius: 8px;
+  }
+  transform-origin: left center;
+  transform: rotate(270deg);
+
+  &__label {
+    color: $gray-100-color;
+    margin-left: -12px;
+    margin-top: -10px;
+    font-weight: 400;
+    font-size: 0.75rem;
+  }
+}
+
+.cost-values {
+  &__item {
+    color: $gray-100-color;
+    font-size: 0.75rem;
+
+    & + & {
+      margin-top: 17px;
+    }
+  }
+}
+
+.average-line {
+  height: 100%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  &__length {
+    font-size: 0.99rem;
+  }
+  &__number {
+    font-size: 0.625rem;
+    padding: 4px;
+    border-radius: 8px;
+    background-color: $primary-color;
+  }
+}

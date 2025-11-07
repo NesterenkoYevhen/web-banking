@@ -1,0 +1,28 @@
+@import '../../../../../../scss/variables';
+
+.top-up {
+  &__dropdown {
+    width: 136px;
+  }
+  
+  &__amount {
+    border: none !important;
+    padding: 0 !important;
+    border-radius: 0px !important;
+    &--label {
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: $gray-50-color;
+    }
+  }
+  &__input {
+    margin-top: 16px;
+    padding: 13.5px 16px;
+    border: 1px solid $gray-30-color;
+    border-radius: 16px;
+  }
+
+  &__submit {
+    margin-top: 24px;
+  }
+}

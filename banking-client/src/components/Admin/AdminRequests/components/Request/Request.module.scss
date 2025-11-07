@@ -1,0 +1,79 @@
+@import '../../../../../scss/variables';
+
+.request {
+  &__field {
+    vertical-align: top;
+    padding-top: 32px;
+    & + & {
+      padding-left: 24px;
+    }
+  }
+}
+
+.user {
+  padding: 4px 24px;
+  &__logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 16px;
+  }
+}
+
+.amount, .id, .status, .action {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.date {
+  padding: 4px 24px;
+  &__main-text {
+    font-weight: 500;
+    font-size: 0.875rem;
+    color: $gray-100-color;
+  }
+
+  &__secondary-text {
+    margin-top: 5px;
+    font-size: 0.75rem;
+    color: $gray-70-color;
+    font-weight: 400;
+  }
+}
+
+.status {
+  & > div {
+    padding: 4px 24px;
+  }
+  &__circle {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 8px;
+    &--waiting {
+      background-color: $warning-color;
+    }
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 0.875rem;
+    color: $gray-100-color;
+  }
+}
+
+.action {
+  & > div {
+    padding: 4px 24px;
+  }
+  &__confirm {
+    font-size: 1rem;
+    color: $success-color;
+  }
+
+  &__reject {
+    font-size: 1rem;
+    color: $error-color;
+    margin-left: 10px;
+  }
+}

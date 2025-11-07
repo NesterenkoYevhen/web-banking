@@ -1,0 +1,84 @@
+.services {
+  margin-top: 24px;
+  width: 470px;
+
+  &__requests {
+    max-width: 288px;
+
+    &--btn {
+      padding: 46px 75px 46px 16px;
+
+      & > svg {
+        font-size: 1.5rem;
+        line-height: 0;
+        margin-right: 16px;
+      }
+    }
+  }
+
+  &__review {
+    width: 184px;
+
+    &--btn {
+      padding: 20px 16px;
+      & > div {
+        text-align: left;
+
+        & > h3 {
+          margin-top: 8px;
+        }
+      }
+
+      & > svg {
+        font-size: 1.5rem;
+        line-height: 0;
+        margin-right: 16px;
+      }
+    }
+  }
+
+  &__waiting-new-users {
+    margin-top: 16px;
+  }
+
+  &__waiting {
+    width: 184px;
+    &--btn {
+      padding: 30px 16px;
+      & > div {
+        text-align: left;
+
+        & > h3 {
+          margin-top: 8px;
+        }
+      }
+
+      & > svg {
+        font-size: 1.5rem;
+        line-height: 0;
+        margin-right: 16px;
+      }
+    }
+  }
+
+  &__new-users {
+    width: 272px;
+
+    &--btn {
+      padding: 30px 16px;
+      & > div {
+        text-align: left;
+
+        & > h3 {
+          margin-top: 8px;
+        }
+      }
+
+      & > svg {
+        font-size: 1.5rem;
+        line-height: 0;
+        margin-right: 16px;
+      }
+    }
+  }
+}

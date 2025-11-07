@@ -1,0 +1,65 @@
+@import '../../../../../../../../scss/variables';
+
+.credit-card {
+  min-width: 288px;
+  max-width: 288px;
+  height: 201px;
+  padding: 24px;
+  border-radius: 16px;
+  &--dark {
+    background-color: $additional-gray-2-color;
+  }
+  
+  &--gold {
+    background-color: $gold-card-color;
+  }
+
+  & + & {
+    margin-left: 25px;
+  }
+
+  &__title {
+    &--dark {
+      color: $gray-10-color;
+    }
+
+    &--gold {
+      color: $gray-100-color;
+    }
+  }
+
+  &__balance {
+    &--dark {
+      color: $gray-0-color;
+    }
+
+    &--gold {
+      color: $gray-100-color;
+    }
+  }
+
+  &__balance-title {
+    margin-top: 5px;
+    &--dark {
+      color: $gray-10-color;
+    }
+
+    &--gold {
+      color: $gray-100-color;
+    }
+  }
+
+  &__number {
+    &--dark {
+      color: $gray-10-color;
+    }
+
+    &--gold {
+      color: $gray-100-color;
+    }
+  }
+
+  &__payment-system {
+    width: 40px;
+  }
+}

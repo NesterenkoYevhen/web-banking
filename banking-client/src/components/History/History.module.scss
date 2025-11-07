@@ -1,0 +1,156 @@
+@import '../../scss/variables';
+
+.history {
+  padding: 40px 56px 600px 56px;
+
+  &__container {
+    margin-top: 49px;
+  }
+
+  &__filters {
+    max-width: 430px;
+    border-radius: 8px;
+    background-color: $additional-gray-1-color;
+  }
+
+  &__filter {
+    padding: 13.5px 0;
+
+    &--radio {
+      display: none;
+    }
+
+    &--label {
+      cursor: pointer;
+      padding: 13.5px 16px;
+      border-radius: 8px;
+    }
+
+    &--radio:checked + &--label {
+      background-color: $primary-color;
+    }
+  }
+
+  &__search {
+    padding: 14px 24px;
+    border: 1px solid $gray-50-color;
+    border-radius: 16px;
+    width: 392px;
+
+    &--label {
+      font-size: 1.25rem;
+      color: $gray-50-color;
+      line-height: 0;
+    }
+
+    &--input {
+      font-size: 0.875rem;
+      color: $gray-100-color;
+      margin-left: 16px;
+      width: 100%;
+      &::placeholder {
+        color: $gray-70-color;
+        font-size: 0.875rem;
+      }
+    }
+  }
+
+  &__period {
+    &--select {
+      color: $gray-70-color;
+      border-radius: 16px;
+      padding: 12px 15px;
+      background-color: $additional-gray-1-color;
+      font-size: 0.75rem;
+      border: none;
+      width: 184px;
+      & svg {
+        color: $gray-70-color;
+        font-size: 1.3rem;
+      }
+    }
+  }
+
+  &__selected-period {
+    color: $gray-70-color;
+    border-radius: 16px;
+    padding: 15px 14.5px;
+    background-color: $additional-gray-1-color;
+    font-size: 0.75rem;
+  }
+}
+
+.history-table {
+  margin-top: 40px;
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+  &__header {
+    background: $additional-gray-1-color;
+  }
+
+  &__title {
+    text-align: left;
+    padding: 16px 24px;
+  }
+
+  &__header:first-child &__title:first-child {
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+  }
+  &__header:first-child &__title:last-child {
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+  }
+
+  &__item {
+    padding: 24px 24px 0 24px;
+    text-align: left;
+    vertical-align: top;
+  }
+
+  &__logo {
+    display: block;
+    font-size: 1.75rem;
+    line-height: 0;
+    background: #D9D9D9;
+    border-radius: 8px;
+    padding: 5px; 
+  }
+
+  &__main-text {
+    font-weight: 500;
+    font-size: 0.875rem;
+    color: $gray-100-color;
+  }
+
+  &__secondary-text {
+    font-size: 0.75rem;
+    color: $gray-70-color;
+  }
+
+  &__transaction-info {
+    margin-left: 12px;
+  }
+
+  &__status {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 8px;
+    &--rejected {
+      background-color: $error-color;
+    }
+    &--conducted {
+      background-color: $success-color;
+    }
+  }
+
+  &__download {
+    font-size: 0.875rem;
+    background-color: $primary-color;
+    padding: 10px 60px;
+    border-radius: 16px;
+    font-weight: 600;
+  }
+}

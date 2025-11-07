@@ -1,0 +1,38 @@
+@import '../../scss/variables';
+
+.btn {
+  padding-top: 17px;
+  padding-bottom: 17px;
+  border-radius: 16px;
+  font-size: 1rem;
+  font-weight: 700;
+  width: 100%;
+
+  &--primary {
+    background-color: $primary-color;
+
+    &:focus {
+      background-color: $focused-button-primary-color;
+    }
+
+    &:disabled {
+      cursor: no-drop;
+      background-color: $disabled-button-primary-color;
+      color: $gray-70-color;
+    }
+  }
+
+  &--secondary {
+    background-color: $additional-gray-1-color;
+
+    &:focus {
+      background-color: $focused-button-secondary-color;
+    }
+
+    &:disabled {
+      cursor: no-drop;
+      background-color: $additional-gray-1-color;
+      color: $gray-50-color;
+    }
+  }
+}

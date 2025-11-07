@@ -1,0 +1,53 @@
+@import '../../scss/variables';
+
+.transfer {
+  padding: 40px 56px 200px 56px;
+}
+
+.transfer-form {
+  margin-top: 80px;
+
+  &__field {
+    width: 288px;
+  }
+
+  &__sender-recepient-names {
+    margin-top: 28px;
+  }
+
+  &__amount, &__recepient-name, &__recepient-card {
+    margin-left: 128px;
+  }
+
+  &__sender-recepient-cards {
+    margin-top: 20px;
+  }
+
+  &__controls {
+    margin-top: 80px;
+  }
+
+  &__control {
+    width: 288px;
+
+    & + & {
+      margin-left: 28px;
+    }
+  }
+}
+
+.transfer-info {
+  margin-top: 32px;
+
+  &__title {
+    color: $gray-70-color;
+  }
+
+  &__subtitle {
+    margin-top: 16px;
+    max-width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

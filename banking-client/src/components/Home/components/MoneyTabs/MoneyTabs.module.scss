@@ -1,0 +1,29 @@
+@import '../../../../scss/variables';
+
+.money-tabs {
+  max-width: 287px;
+  height: 250px;
+  
+  &__top-up, &__converter {
+    font-size: 1.125rem;
+    padding: 8px 0;
+    font-weight: 700;
+    width: 129px;
+    text-align: center;
+    color: $gray-50-color;
+  }
+
+  &__header {
+    
+    border-bottom: 1px solid $gray-50-color;
+    &--active {
+      color: $gray-100-color;
+      border-bottom: 2px solid $gray-100-color;
+      margin-bottom: -1px;
+    }
+  }
+  
+  &__content {
+    margin-top: 24px;
+  }
+}

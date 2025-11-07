@@ -1,0 +1,42 @@
+@import '../../../../../scss/variables';
+
+.all-users {
+  margin-top: 24px;
+  padding: 24px;
+  border-radius: 8px;
+  background-color: $additional-gray-1-color;
+
+  &__container {
+    margin-top: 32px;
+  }
+
+  &__item {
+    width: 48px;
+    height: 48px;
+    & > img {
+      border-radius: 50%;
+    }
+
+    & + & {
+      margin-left: -15px;
+    }
+  }
+
+  &__amount {
+    margin-left: 24px;
+  }
+
+  &__btn {
+    margin-top: 32px;
+
+    & svg {
+      font-size: 1.5rem;
+      line-height: 0;
+      margin-right: 8px;
+    }
+  }
+
+  &__empty {
+    margin-top: 30px;
+  }
+}

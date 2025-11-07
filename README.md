@@ -17,7 +17,7 @@ This application demonstrates modern **frontend and backend development** using 
 The project consists of two major parts:
 
 - **Frontend:** a React-based client application.
-- **Backend:** a microservice ecosystem built with Node.js, Express, and NestJS, communicating through NATS and running inside Docker containers orchestrated via Kubernetes.
+- **Backend:** a microservice ecosystem built with Node.js, Express, communicating through NATS and running inside Docker containers orchestrated via Kubernetes.
 
 ---
 
@@ -168,8 +168,6 @@ Open http://localhost:3000
 ## 🧪 Testing
 
 - Backend endpoints tested via Postman and Jest.
-- Frontend unit testing with React Testing Library.
-- Integration tests for key user flows (authentication, transfers, history).
 
 ---
 
@@ -180,6 +178,8 @@ Open http://localhost:3000
 - Introduce WebSocket-based live updates.
 - Extend admin dashboard analytics.
 - Move to CI/CD pipeline (GitHub Actions + Kubernetes Deploy).
+- Frontend unit testing with React Testing Library.
+- Integration tests for key user flows (authentication, transfers, history).
 
 ---
 

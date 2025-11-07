@@ -1,0 +1,89 @@
+@import '../../../scss/variables';
+
+.users {
+  padding: 40px 56px 200px 56px;
+
+  &__container {
+    margin-top: 49px;
+  }
+
+  &__filters {
+    max-width: 430px;
+    border-radius: 8px;
+    background-color: $additional-gray-1-color;
+  }
+
+  &__filter {
+    padding: 13.5px 0;
+
+    &--radio {
+      display: none;
+    }
+
+    &--label {
+      cursor: pointer;
+      padding: 13.5px 16px;
+      border-radius: 8px;
+    }
+
+    &--radio:checked + &--label {
+      background-color: $primary-color;
+    }
+  }
+
+  &__search {
+    padding: 14px 24px;
+    border: 1px solid $gray-50-color;
+    border-radius: 16px;
+    width: 392px;
+
+    &--label {
+      font-size: 1.25rem;
+      color: $gray-50-color;
+      line-height: 0;
+    }
+
+    &--input {
+      font-size: 0.875rem;
+      color: $gray-100-color;
+      margin-left: 16px;
+      width: 100%;
+      &::placeholder {
+        color: $gray-70-color;
+        font-size: 0.875rem;
+      }
+    }
+  }
+}
+
+.users-table {
+  margin-top: 40px;
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+
+  &__title {
+
+    & + & {
+      padding-left: 24px;
+    }
+    & > div {
+      padding: 16px 24px;
+      background: $additional-gray-1-color;
+      border-radius: 8px;
+    }
+
+    // &--user {
+    //   width: 24%;
+    // }
+
+    // &--amount, &--history, &--status, &--action, &--date {
+    //   width: 15%;
+    // }
+
+    // &--id {
+    //   width: 7%;
+    // }
+    
+  }
+}

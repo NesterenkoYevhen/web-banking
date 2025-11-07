@@ -1,0 +1,40 @@
+@import '../../../scss/variables';
+
+.footer {
+  color: $gray-0-color;
+  background-color: $secondary-color;
+
+  &__container {
+    max-width: 98%;
+    padding: 40px 15px;
+    margin: 0 auto;  
+  }
+
+  &__contacts {
+    & > li + li {
+      margin-left: 50px;
+    }
+  }
+
+  &__rights {
+    margin-top: 32px;
+    font-weight: 400;
+  }
+}
+
+.download {
+  & + & {
+    margin-left: 32px;
+  }
+  &__icon {
+    font-size: 2rem;
+  }
+
+  &__available-market {
+    margin-top: 3px;
+  }
+
+  &__text {
+    margin-left: 8px;
+  }
+}

@@ -1,0 +1,191 @@
+@import '../../../scss/variables';
+
+.messages {
+  padding: 40px 56px 200px 56px;
+
+  &__container {
+    margin-top: 49px;
+  }
+
+  &__filters {
+    max-width: 430px;
+    border-radius: 8px;
+    background-color: $additional-gray-1-color;
+  }
+
+  &__filter {
+    padding: 13.5px 0;
+
+    &--radio {
+      display: none;
+    }
+
+    &--label {
+      cursor: pointer;
+      padding: 13.5px 16px;
+      border-radius: 8px;
+    }
+
+    &--radio:checked + &--label {
+      background-color: $primary-color;
+    }
+  }
+
+  &__search {
+    padding: 14px 24px;
+    border: 1px solid $gray-50-color;
+    border-radius: 16px;
+    width: 392px;
+
+    &--label {
+      font-size: 1.25rem;
+      color: $gray-50-color;
+      line-height: 0;
+    }
+
+    &--input {
+      font-size: 0.875rem;
+      color: $gray-100-color;
+      margin-left: 16px;
+      width: 100%;
+      &::placeholder {
+        color: $gray-70-color;
+        font-size: 0.875rem;
+      }
+    }
+  }
+
+  &__period {
+    &--select {
+      color: $gray-70-color;
+      border-radius: 16px;
+      padding: 12px 15px;
+      background-color: $additional-gray-1-color;
+      font-size: 0.75rem;
+      border: none;
+      width: 184px;
+      & svg {
+        color: $gray-70-color;
+        font-size: 1.3rem;
+      }
+    }
+  }
+
+  &__selected-period {
+    color: $gray-70-color;
+    border-radius: 16px;
+    padding: 15px 14.5px;
+    background-color: $additional-gray-1-color;
+    font-size: 0.75rem;
+  }
+}
+
+.messages-table {
+  margin-top: 40px;
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+
+  &__title {
+
+    & + & {
+      padding-left: 24px;
+    }
+    & > div {
+      padding: 16px 24px;
+      background: $additional-gray-1-color;
+      border-radius: 8px;
+    }
+
+    &--user {
+      width: 24%;
+    }
+
+    &--amount, &--messages, &--importance, &--action, &--date {
+      width: 15%;
+    }
+
+    &--id {
+      width: 7%;
+    }
+    
+  }
+}
+
+.user-messages {
+  &__field {
+    vertical-align: top;
+    padding-top: 32px;
+    & + & {
+      padding-left: 24px;
+    }
+  }
+}
+
+.user {
+  padding: 4px 24px;
+  &__logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 16px;
+  }
+}
+
+.id, .importance, .user-messages-amount {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.date {
+  padding: 4px 24px;
+  &__main-text {
+    font-weight: 500;
+    font-size: 0.875rem;
+    color: $gray-100-color;
+  }
+
+  &__secondary-text {
+    margin-top: 5px;
+    font-size: 0.75rem;
+    color: $gray-70-color;
+    font-weight: 400;
+  }
+}
+
+.importance {
+  & > div {
+    padding: 4px 24px;
+  }
+  &__circle {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 8px;
+    &--moderate {
+      background-color: $warning-color;
+    }
+    &--low {
+      background-color: $success-color;
+    }
+    &--high {
+      background-color: $error-color;
+    }
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 0.875rem;
+    color: $gray-100-color;
+  }
+}
+
+.action {
+  & > div {
+    padding: 4px 0;
+
+    & > button {
+      font-size: 0.875rem;
+    }
+  }
+}

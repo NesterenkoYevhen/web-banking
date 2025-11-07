@@ -1,0 +1,433 @@
+@import '../../scss/variables';
+
+.wrapper {
+  height: 100vh;
+  background-color: $gray-80-color;
+  border-radius: 0px 0px 40px 40px;
+  
+  &__container {
+    max-width: 1200px;
+    padding: 63px 15px 0px 15px;
+    margin: 0 auto;
+  }
+
+  &__circles {
+    margin-left: 35%;
+  }
+
+  &__info {
+    margin-top: 57px;
+    max-width: 424px;
+  }
+
+  &__title {
+    color: #fff;
+  }
+
+  &__semi-title {
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.25rem;
+    margin-top: 16px;
+  }
+
+  &__signup {
+    margin-top: 24px;
+    max-width: 312px;
+  }
+
+  &__cards {
+    margin-left: 8%;
+  }
+}
+
+.header {
+  padding-top: 40px;
+
+  &__logo {
+    display: block;
+    max-width: 32px;
+  }
+
+  &__title {
+    margin-left: 25px;
+    color: #fff;
+  }
+}
+
+.logo {
+  &__img {
+    display: block;
+    padding: 5px;
+    margin: 0 auto;
+  }
+
+  &__text {
+    color: #fff;
+  }
+}
+
+.header-nav {
+  &__link {
+    color: #fff;
+    font-weight: 500;
+
+    & + & {
+      margin-left: 40px;
+    }
+  }
+
+  &__login {
+    margin-left: 64px;
+    font-size: 1rem;
+    padding: 8px 16px;
+    border-radius: 16px;
+    background-color: $primary-color;
+    & > a > span {
+      margin-left: 7px;
+    }
+  }
+}
+
+.login {
+  &__icon {
+    font-size: 1.5rem;
+  }
+}
+
+.circle {
+  background-color: $primary-color;
+  border-radius: 50%;
+  &--big {
+    width: 40px;
+    height: 40px;
+  }
+
+  &--small {
+    margin-left: 50px;
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.card {
+  padding: 16px 24px;
+  background: linear-gradient(63.09deg, #FBFD9A 7.61%, rgba(250, 255, 0, 0.35) 153.18%);
+  border-radius: 16px;
+  width: 288px;
+  transform: rotate(-17.97deg);
+  & + & {
+    margin-left: 320px;
+    transform: rotate(7.3deg);
+  }
+
+  &__img {
+    display: block;
+    padding: 5px;
+    margin: 0 auto;
+  }
+
+  &__logo {
+    display: block;
+    max-width: 32px;
+  }
+
+  &__title {
+    margin-left: 24px;
+  }
+
+  &__number, &__type {
+    margin-top: 32px;
+  }
+  &__type {
+    &--title {
+      font-size: 1rem;
+    }
+
+    &--logo {
+      max-width: 40px;
+    }
+  }
+
+}
+
+.main {
+  padding-top: 120px;
+  padding-bottom: 180px;
+}
+
+.benefits {
+  &__list {
+    margin-top: 110px;
+    padding: 0 72px;
+  }
+
+  &__icon {
+    font-size: 2rem;
+    padding: 24px;
+    background-color: $primary-color;
+    border-radius: 8px;
+    display: inline-block;
+    line-height: 0;
+  }
+
+  &__item {
+    max-width: 312px;
+  }
+
+  &__semititle {
+    margin-top: 24px;
+  }
+
+  &__text {
+    margin-top: 24px;
+    font-size: 1.25rem;
+    color: $gray-70-color;
+    font-weight: 400;
+  }
+}
+
+.main-title {
+  font-size: 3rem;
+  padding: 0 20px 20px 20px;
+  display: inline-block;
+  position: relative;
+
+  &:after {
+    content:'';
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    background: $primary-color;
+    height: 9px;
+    border-radius:8px
+  }
+}
+
+.services {
+  margin-top: 120px;
+
+  &__list {
+    margin-top: 88px;
+    padding: 0 72px;
+  }
+
+  &__card {
+    & + & {
+      margin-top: 120px;
+    }
+  }
+}
+
+.services-card {
+  &__info {
+    max-width: 500px;
+    margin-top: 110px;
+  }
+
+  &__semititle {
+    font-weight: 400;
+    color: $gray-70-color;
+    font-size: 1.25rem;
+  }
+
+  &__title {
+    margin-top: 24px;
+    font-size: 2.5rem;
+  }
+
+  &__text {
+    margin-top: 24px;
+    font-size: 1.25rem;
+    color: $gray-70-color;
+    font-weight: 400;
+  }
+
+  
+}
+
+.account-management, .customer-service {
+  &__img {
+    position: relative;
+    &--bg {
+      padding: 26px;
+      width: 434px;
+      height: 614px;
+      border-radius: 20px;
+      background-color: $gray-80-color;
+      position: absolute;
+      top: 0;
+      left: 14%;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+    }
+
+    &--circle {
+      width: 20px;
+      height: 20px;
+      background-color: $primary-color;
+      border-radius: 50%;
+    }
+
+    &--picture {
+      margin-top: 100px;
+      z-index: 999;
+    }
+  }
+}
+
+.bill-payment {
+  &__img {
+    position: relative;
+    &--bg {
+      padding: 26px 103px;
+      width: 434px;
+      height: 614px;
+      border-radius: 20px;
+      background-color: $primary-color;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+    }
+
+    &--circle {
+      width: 20px;
+      height: 20px;
+      background-color: $gray-80-color;
+      border-radius: 50%;
+    }
+
+    &--picture {
+      margin-top: 100px;
+      z-index: 999;
+    }
+  }
+}
+
+.read-more {
+  margin-top: 24px;
+  &__text {
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: $gray-80-color;
+  }
+
+  &__arrow {
+    margin-left: 21px;
+    padding: 14px;
+    background-color: $primary-color;
+    line-height: 0;
+    border-radius: 50%;
+  }
+}
+
+.ready-sign-up {
+  margin-top: 290px;
+
+  &__circles {
+    margin-left: 75%;
+  }
+
+  &__title {
+    font-size: 3rem;
+  }
+
+  &__text {
+    margin-top: 24px;
+    font-size: 1.5rem;
+    color: $gray-70-color;
+    max-width: 640px;
+  }
+
+  &__btn {
+    margin-top: 40px;
+    min-width: 214px;
+  }
+}
+
+.footer {
+  border-radius: 40px 40px 0px 0px;
+  padding: 76px 108px;
+  background-color: $gray-80-color;
+
+  &__logo {
+    display: block;
+    max-width: 32px;
+  }
+
+  &__title {
+    margin-left: 25px;
+    color: #fff;
+  }
+
+  &__contacts {
+    margin-top: 32px;
+  }
+}
+
+.footer-nav {
+  &__list {
+    margin-top: 24px;
+  }
+
+  &__item {
+    font-weight: 400;
+    color: #fff;
+    
+    & + & {
+      margin-left: 50px;
+    }
+  }
+}
+
+.footer-subscribe {
+  &__text {
+    color: #fff;
+    font-weight: 400;
+  }
+
+  &__input {
+    margin-top: 8px;
+    padding: 16px;
+    border-bottom: 1px solid $gray-50-color;
+  }
+}
+
+.subscribe-input {
+  font-size: 1rem;
+  width: 325px;
+  color: #fff;
+  &::placeholder {
+    color: $gray-50-color;
+  }
+  &__arrow {
+    font-size: 1.4rem;
+    color: $primary-color;
+    padding: 0;
+    max-width: 19px;
+  }
+}
+
+.contacts {
+  &__rights {
+    font-weight: 400;
+    color: #fff;
+  }
+
+  &__item {
+    font-size: 1.3rem;
+    padding: 8px;
+    border: 1px solid $gray-50-color;
+    border-radius: 50%;
+    line-height: 0;
+    color: #fff;
+    & + & {
+      margin-left: 24px;
+    }
+  }
+}

@@ -1,0 +1,41 @@
+// titles
+@mixin make-titles(
+  $sizes: $title-sizes,
+  $color: $title-color,
+  $font: $title-ff
+) {
+  .title {
+    color: $color;
+    font-family: $font;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 120%;
+
+    @each $name, $value in $sizes {
+      &--#{$name} {
+        font-size: $value;
+      }
+    }
+  }
+}
+
+// texts
+@mixin make-texts(
+  $sizes: $text-sizes,
+  $font-weights: $text-font-weights,
+  $font: $text-ff
+) {
+  .text {
+    font-family: $font;
+    letter-spacing: 0;
+    line-height: 150%;
+
+    @each $size in map-keys($sizes) {
+      $font-weight: map-get($font-weights, $size);
+      &--#{$size} {
+        font-weight: $font-weight;
+        font-size: map-get($sizes, $size);
+      }
+    }
+  }
+}

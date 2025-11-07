@@ -1,0 +1,17 @@
+@import '../../../../../scss/variables';
+
+.user {
+  &__field {
+    vertical-align: top;
+    padding-top: 32px;
+    & + & {
+      padding-left: 24px;
+    }  
+  }
+  
+}
+
+.id, .name, .surname, .email, .age, .gender {
+  text-align: center;
+  vertical-align: middle;
+}

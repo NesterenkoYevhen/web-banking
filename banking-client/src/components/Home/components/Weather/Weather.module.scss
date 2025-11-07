@@ -1,0 +1,57 @@
+@import '../../../../scss/variables';
+
+.weather {
+  margin-top: 52px;
+  padding: 24px;
+  background-color: $additional-gray-1-color;
+  width: 288px;
+  border-radius: 8px;
+
+  &__degrees-img {
+    margin-top: 20px;
+  }
+
+  &__degrees {
+    font-size: 3rem;
+  }
+
+  &__img {
+    max-width: 70px;
+  }
+
+  &__type {
+    margin-top: 10px;
+    color: $gray-70-color;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #d9d9d9; 
+  }
+
+  &__geolocation {
+    margin-top: 16px;
+  }
+
+  &__date {
+    margin-top: 8px;
+  }
+}
+
+.weather-type {
+  &__symbol {
+    line-height: 0;
+    font-size: 1.5rem;
+  }
+
+  &__info {
+    margin-left: 8px;
+  }
+}
+
+.weather-geolocation, .weather-date {
+  &__symbol {
+    line-height: 0;
+    font-size: 1.2rem;
+  }
+  &__info {
+    margin-left: 8px;
+  }
+}

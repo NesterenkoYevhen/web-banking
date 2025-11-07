@@ -1,0 +1,53 @@
+@import '../../../../scss/variables';
+
+.header-main {
+  max-width: 104px;
+  background-color: $secondary-color;
+  padding: 40px 24px 0px 24px;
+  flex-grow: 1;
+
+  &__logo {
+    display: block;
+    max-width: 32px;
+  }
+
+  &__link {
+    font-size: 1.5rem;
+    color: $gray-70-color;
+    padding: 12px;
+    border-radius: 16px;
+    display: flex;
+
+    &--active {
+      color: $primary-color;
+      background-color: rgba($primary-color, 15%);
+    }
+  }
+
+  &__nav {
+    margin-top: 64px;
+  }
+
+  &__nav-list{
+    &--item {
+      & + & {
+        margin-top: 24px;   
+      } 
+    }
+  }
+
+  &__logout {
+    margin-top: 76px;
+  }
+}
+
+.logo {
+  &__text {
+    color: #fff;
+  }
+  &__img {
+    display: block;
+    padding: 5px;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,47 @@
+@import '../../../../scss/variables';
+
+.header-auth {
+  padding-top: 40px;
+
+  &__logo {
+    display: block;
+    max-width: 32px;
+  }
+
+  &__title {
+    margin-left: 25px;
+  }
+}
+
+.logo {
+  &__img {
+    display: block;
+    padding: 5px;
+    margin: 0 auto;
+  }
+}
+
+.not-auth-nav {
+
+  &__link {
+    padding: 7px;
+    font-size: 1.5rem;
+    
+    & + & {
+      margin-left: 30px;
+    }
+    
+    &--gray {
+      border-radius: 8px;
+      background-color: $additional-gray-1-color;
+    }
+
+    &--yellow {
+      border-radius: 16px;
+      background-color: $primary-color;
+      & > a > span {
+        margin-left: 7px;
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+@import '../../scss/variables';
+
+.home {
+  background: linear-gradient(to right, #fff 0%, #fff 61%, $additional-gray-1-color 61%, $additional-gray-1-color 100%);
+  padding: 40px 56px;
+
+  &__content {
+    padding: 41px 0px 60px 0;
+  }
+
+  &__rates-analysis, &__moneytabs-weather {
+    padding-top: 22px;
+  }
+
+  &__wallet {
+    padding-left: 52px;
+    width: 37%;
+  }
+}
