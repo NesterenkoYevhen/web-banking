@@ -197,3 +197,5 @@ Year: 2023
 
 Developed as part of the bachelor’s qualification work:  
 > “Research of the efficiency of programming technologies using JavaScript and microservice architecture for frontend and backend fullstack web development” — LNU, Faculty of Electronics and Computer Technologies, Department of System Design, 2023.
+
+**Thesis Document:** **[Link](https://drive.google.com/file/d/1els9_7-SP2WVzB-FZYa1QX1JhzlCFlv6/view?usp=drive_link)**
